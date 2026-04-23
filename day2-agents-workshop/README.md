@@ -62,7 +62,8 @@ The key trade-off is that it resets when the session ends, preferences are not s
 
 ## Workflow Screenshot
 
-> **[n8n workflow canvas here]**
+> <img width="1166" height="567" alt="Screenshot 2026-04-23 084959" src="https://github.com/user-attachments/assets/596e1eb8-9599-440a-959a-016272b1eff4" />
+
 
 The workflow structure:
 
@@ -103,7 +104,8 @@ The workflow structure:
 2. Agent calls `search_stays` with query "best airbnb Manali under 2500 INR per night 2 guests"
 3. Agent formats results into scored cards with weather note included
 
-> **[screenshot of this exchange here]**
+> <img width="1850" height="1034" alt="image" src="https://github.com/user-attachments/assets/44abf1aa-a3b9-4396-9865-80e2d688a724" />
+
 
 ---
 
@@ -112,20 +114,22 @@ The workflow structure:
 **Input (later in same session):**
 > `What about Kasol instead?`
 
-**What to observe:** Agent does NOT ask for budget or guest count again, it remembers ₹2500 and 2 guests from earlier. It immediately calls weather and search for Kasol with the same parameters.
+**What to observe:** Agent does not ask for budget or guest count again, it remembers ₹2500 and 2 guests from earlier. It immediately calls weather and search for Kasol with the same parameters.
 
-> **[screenshot showing memory in action here]**
+> <img width="1850" height="1040" alt="image" src="https://github.com/user-attachments/assets/30219265-ed72-49e6-8364-73a9e8f76c71" />
+
 
 ---
 
 ### Screenshot 3 — Calculator Tool Invoked
 
 **Input:**
-> `We are 5 friends, found a cottage for ₹9000 per night for 2 nights — cost per person?`
+> `We are 5 friends, found a cottage for ₹9000 per night for 2 nights, cost per person?`
 
 **What happens:** Agent calls `calculate` with `(9000 × 2) / 5` and returns ₹3,600 per person.
 
-> **[screenshot of calculator tool being triggered here]**
+> <img width="1826" height="1046" alt="image" src="https://github.com/user-attachments/assets/8560e446-dfd5-4415-8172-aae078d267ca" />
+
 
 ---
 
